@@ -9,6 +9,8 @@ import Options from "./components/Options";
 function App() {
   return (
     <>
+      <div className="background-palm-leaves"></div>
+      <div className="background-palm-leaves-shading"></div>
       <Nav />
       <Landing />
       {/* <Banner /> */}
