@@ -1,0 +1,62 @@
+.landing-outer {
+  width: 100%;
+  height: 100vh;
+  background-color: #b1cbca;
+}
+.header {
+  font-size: 159px;
+  color: transparent;
+  -webkit-text-stroke: 4px #fef1e2;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 23.5px;
+  font-weight: 900;
+}
+.spacing {
+  /* letter-spacing: 34px; */
+}
+.landing-text-one {
+  position: absolute;
+  top: 140px;
+  left: 700px;
+}
+.landing-text-two {
+  position: absolute;
+  top: 320px;
+  left: 570px;
+}
+.landing-text-three {
+  position: absolute;
+  top: 500px;
+  left: 450px;
+}
+.landing-text-four {
+  position: absolute;
+  top: 700px;
+  left: 230px;
+  color: #b8a3b6;
+  /* color: #fef1e2; */
+  z-index: 2;
+}
+.landing-picture {
+  width: 880px;
+  height: 820px;
+  position: absolute;
+  top: 190px;
+  left: 40%;
+  background-image: url("../assets/landing\ page\ skater.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}
+.landing-signiture {
+  position: absolute;
+  left: 100px;
+  top: 600px;
+  z-index: 2;
+  width: 1100px;
+  height: 800px;
+  background-image: url("../assets/erriefickligrayneon\(2\).png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+}

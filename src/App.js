@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Landing /> */}
+      <Landing />
       {/* <Banner /> */}
       {/* <Options /> */}
       {/* <Insta /> */}
