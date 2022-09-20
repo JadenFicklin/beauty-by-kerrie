@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <Nav />
-      <Landing />
-      <Banner />
-      <Options />
-      <Insta />
-      <Footer />
+      {/* <Landing /> */}
+      {/* <Banner /> */}
+      {/* <Options /> */}
+      {/* <Insta /> */}
+      {/* <Footer /> */}
     </>
   );
 }

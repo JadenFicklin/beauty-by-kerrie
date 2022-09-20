@@ -1,0 +1,11 @@
+.nav-outer {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #fef1e2;
+  color: #fef1e2;
+  padding-top: 20px;
+}
