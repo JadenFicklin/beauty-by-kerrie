@@ -13,7 +13,7 @@ function App() {
       <div className="background-palm-leaves-shading"></div>
       <Nav />
       <Landing />
-      {/* <Banner /> */}
+      <Banner />
       {/* <Options /> */}
       {/* <Insta /> */}
       {/* <Footer /> */}

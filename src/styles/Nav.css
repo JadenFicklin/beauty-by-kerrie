@@ -9,7 +9,9 @@
   padding-top: 20px;
   position: absolute;
   left: 50%;
-  margin-left: -40%;
+  margin-left: -43%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .option:hover {
   cursor: pointer;
