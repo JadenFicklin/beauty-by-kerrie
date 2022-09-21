@@ -73,7 +73,7 @@
 .lip-tattoo-bottom-inner {
   color: #4c3150;
   width: 80%;
-  height: 60%;
+  height: 70%;
 }
 .lip-tattoo-bottom-sub-header {
   margin: 10px 0px;
@@ -172,4 +172,51 @@
 .quote-credit {
   font-size: 20px;
   margin-top: 20px;
+}
+
+.fourth-box-top,
+.fourth-box-bottom {
+  width: 100%;
+  height: 50%;
+}
+.fourth-box-top {
+  background-color: #fef1e2;
+  display: flex;
+  justify-content: flex-end;
+}
+.fourth-box-picture {
+  margin-right: -10px;
+  margin-top: -40px;
+  width: 210px;
+  height: 360px;
+  background-image: url("../assets/eyeliner.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  transition: 0.3s;
+}
+.fourth-box-picture:hover {
+  width: 240px;
+  height: 390px;
+}
+.fourth-box-bottom {
+  position: relative;
+  background-color: #b8a3b6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  color: #4c3150;
+}
+
+.fourth-box-bottom-inner {
+  width: 70%;
+  height: 65%;
+}
+.fourth-box-bottom-sub-header {
+  margin: 15px 0px;
+}
+.b {
+  border: 1px solid #4c3150;
 }

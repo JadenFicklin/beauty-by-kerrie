@@ -45,7 +45,24 @@ function Options() {
                 </div>
               </div>
             </div>
-            <div className="box"></div>
+            <div className="box">
+              <div className="fourth-box-top">
+                <div className="fourth-box-picture"></div>
+              </div>
+              <div className="fourth-box-bottom">
+                <div className="fourth-box-bottom-inner">
+                  <div className="fourth-box-bottom-header h">
+                    Permanent Eyeliner
+                  </div>
+                  <div className="fourth-box-bottom-sub-header s">
+                    Smudge free defined Eyeliner
+                  </div>
+                  <div className="fourth-box-bottom-button b">
+                    Read More {mystring}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="boxes-bottom">
             <div className="box-wide"></div>
