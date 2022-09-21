@@ -35,7 +35,7 @@
   width: 48%;
   height: 95%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: rgba(211, 211, 211, 0);
   overflow: hidden;
 }
 .bot {
@@ -193,9 +193,11 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .fourth-box-picture:hover {
+  margin-right: -20px;
+  margin-top: -50px;
   width: 240px;
   height: 390px;
 }
@@ -219,4 +221,107 @@
 }
 .b {
   border: 1px solid #4c3150;
+}
+
+.box-wide-picture {
+  width: 110%;
+  height: 110%;
+  margin: -15px 0px 0px -15px;
+  background-image: url("../assets/holding\ flower.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  transition: 0.3s;
+  border: 1px solid red;
+}
+.box-wide-picture:hover {
+  margin: -45px 0px 0px -45px;
+  width: 120%;
+  height: 120%;
+}
+.about-me {
+  font-size: 28px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #b8a3b6;
+  /* color: #4c3150; */
+  margin-top: 330px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.powder-brows-top {
+  width: 100%;
+  height: 50%;
+  background-image: url("../assets/brows.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  transition: 0.3s;
+}
+.powder-brows-top:hover {
+  scale: 1.2;
+}
+.powder-brows-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b8a3b6;
+  position: relative;
+  z-index: 2;
+}
+.powder-brows-bottom-inner {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #4c3150;
+}
+.permanent-brows-sub-header {
+  margin: 10px 0px;
+}
+.sixth-box {
+  background-color: #fef1e2;
+}
+.seventh-box-inner {
+  width: 60%;
+  height: 80%;
+  /* background-image: url("../assets/seventh-picture.png"); */
+  background-image: url("../assets/extra\ two.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: none;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+.seventh-box {
+  background-color: #daebea;
+  background-color: #b1cbca;
+}
+
+.circle-two {
+  background-color: #daebea;
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+  margin-top: -300px;
+  transition: 0.3s;
+  z-index: 1;
+}
+.circle-two-expanded {
+  background-color: #daebea;
+  height: 760px;
+  width: 760px;
+  border-radius: 50%;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  margin-left: -200px;
+  margin-right: -230px;
+  margin-top: -510px;
+  transition: 0.5s;
 }

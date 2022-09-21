@@ -5,6 +5,7 @@ import Insta from "./Insta";
 function Options() {
   let mystring = ">";
   const [girl, setGirl] = useState(true);
+  const [seventh, setSeventh] = useState(true);
 
   return (
     <>
@@ -65,9 +66,36 @@ function Options() {
             </div>
           </div>
           <div className="boxes-bottom">
-            <div className="box-wide"></div>
-            <div className="box bot"></div>
-            <div className="box bot"></div>
+            <div className="box-wide">
+              <div className="box-wide-picture"></div>
+            </div>
+            <div className="about-me">About me</div>
+            <div className="box bot sixth-box">
+              <div className="powder-brows-top"></div>
+              <div className="powder-brows-bottom">
+                <div className="powder-brows-bottom-inner">
+                  <div className="permanent-brows-header h">
+                    Permanent Powder Brows
+                  </div>
+                  <div className="permanent-brows-sub-header s">
+                    Perfect for a more natural look
+                  </div>
+                  <div className="permanent-brows-button b">
+                    Read More {mystring}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="box bot seventh-box"
+              onMouseEnter={() => setSeventh(true)}
+              onMouseLeave={() => setSeventh(false)}
+            >
+              <div className="seventh-box-inner"></div>
+              <div
+                className={!seventh ? "circle-two" : "circle-two-expanded"}
+              ></div>
+            </div>
           </div>
         </div>
         <div className="options-bottom">
