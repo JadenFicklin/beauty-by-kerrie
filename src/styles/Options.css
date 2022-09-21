@@ -27,12 +27,16 @@
   width: 24%;
   height: 90%;
   background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .box-wide {
   width: 48%;
   height: 95%;
   padding: 10px;
   background-color: lightgray;
+  overflow: hidden;
 }
 .bot {
   height: 100%;
@@ -43,4 +47,129 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.lip-tattoo-top {
+  width: 100%;
+  height: 50%;
+  background-image: url("../assets/lips.JPG");
+  background-size: cover;
+  background-position: top;
+  background-repeat: none;
+  transition: 0.3s;
+}
+.lip-tattoo-top:hover {
+  scale: 1.2;
+}
+.lip-tattoo-bottom {
+  width: 100%;
+  height: 50%;
+  background-color: #b8a3b6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.lip-tattoo-bottom-inner {
+  color: #4c3150;
+  width: 80%;
+  height: 60%;
+}
+.lip-tattoo-bottom-sub-header {
+  margin: 10px 0px;
+}
+.h {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.s {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.b {
+  width: 95px;
+  height: 32px;
+  border: 1px solid #4c3150;
+  background-color: rgba(255, 255, 255, 0.247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  transition: 0.3s;
+}
+.b:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.847);
+}
+.box-decoration-inner {
+  background-color: #b1cbca;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.circle {
+  background-color: #daebea;
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 40px;
+  margin-top: -300px;
+  transition: 0.3s;
+}
+.circle-expanded {
+  background-color: #daebea;
+  height: 760px;
+  width: 760px;
+  border-radius: 50%;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  margin-left: -130px;
+  margin-top: -510px;
+  transition: 0.5s;
+}
+.girl {
+  width: 350px;
+  height: 450px;
+  background-image: url("../assets/box\ two.png");
+  background-size: cover;
+  background-position: middle;
+  background-repeat: none;
+  position: relative;
+  margin-top: -90px;
+  margin-left: 10%;
+  z-index: 3;
+}
+
+.quote-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/commas.JPG");
+  background-size: cover;
+  background-position: middle;
+  background-repeat: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.quote {
+  width: 80%;
+  height: 30%;
+  font-size: 24px;
+  color: #2b717d;
+  text-align: end;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.quote-credit {
+  font-size: 20px;
+  margin-top: 20px;
 }
