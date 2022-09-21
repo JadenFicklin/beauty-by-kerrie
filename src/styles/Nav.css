@@ -12,7 +12,85 @@
   margin-left: -43%;
   padding-left: 50px;
   padding-right: 50px;
+  background-color: #b1cbca;
+  z-index: 100;
 }
 .option:hover {
+  cursor: pointer;
+}
+.nav-background {
+  width: 100%;
+  height: 80px;
+  background-color: #b1cbca;
+  padding-top: 20px;
+  position: absolute;
+  top: 0px;
+}
+
+.eyeliner-page-false {
+  width: 99%;
+  height: 0vh;
+  transition: 1s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.eyeliner-page-true {
+  width: 99%;
+  height: 99vh;
+  transition: 1s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+.eyeliner-page-left {
+  width: 20%;
+  height: 100%;
+  background-color: purple;
+}
+.eyeliner-page-right {
+  width: 60%;
+  height: 100%;
+  background-color: blue;
+}
+.ribbon {
+  width: 70%;
+  height: 50px;
+  margin: 20px 0px;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 0.3s;
+}
+
+.eyeliner-page-about {
+  margin-top: 160px;
+}
+.text-ribbon {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edge {
+  height: 100%;
+  width: 10%;
+  clip-path: polygon(100% 0, 30% 54%, 100% 100%, 0 100%, 0 0);
+  background-color: white;
+  z-index: 1000;
+  position: relative;
+  left: 19%;
+}
+
+.ribbon:hover {
+  width: 75%;
   cursor: pointer;
 }

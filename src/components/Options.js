@@ -3,10 +3,24 @@ import "../styles/Options.css";
 import Insta from "./Insta";
 
 function Options() {
+  const changeScroll = (position) => {
+    window.scrollTo(0, position);
+  };
+
   let mystring = ">";
   const [girl, setGirl] = useState(true);
-  const [seventh, setSeventh] = useState(true);
+  const [seventh, setSeventh] = useState(false);
   const [aboutMe, setAboutMe] = useState(true);
+
+  const handleLipTattoo = () => {
+    changeScroll(0);
+  };
+  const handleEyeliner = () => {
+    changeScroll(0);
+  };
+  const handlePowderBrows = () => {
+    changeScroll(0);
+  };
 
   return (
     <>
@@ -22,7 +36,10 @@ function Options() {
                     Enhance the shape and the color of your lips with the latest
                     lip blush tattoo
                   </div>
-                  <div className="lip-tattoo-bottom-button b">
+                  <div
+                    className="lip-tattoo-bottom-button b"
+                    onClick={handleLipTattoo}
+                  >
                     Read More {mystring}
                   </div>
                 </div>
@@ -59,7 +76,10 @@ function Options() {
                   <div className="fourth-box-bottom-sub-header s">
                     Smudge free defined Eyeliner
                   </div>
-                  <div className="fourth-box-bottom-button b">
+                  <div
+                    className="fourth-box-bottom-button b"
+                    onClick={handleEyeliner}
+                  >
                     Read More {mystring}
                   </div>
                 </div>
@@ -120,7 +140,10 @@ function Options() {
                   <div className="permanent-brows-sub-header s">
                     Perfect for a more natural look
                   </div>
-                  <div className="permanent-brows-button b">
+                  <div
+                    className="permanent-brows-button b"
+                    onClick={handlePowderBrows}
+                  >
                     Read More {mystring}
                   </div>
                 </div>
@@ -133,7 +156,7 @@ function Options() {
             >
               <div className="seventh-box-inner"></div>
               <div
-                className={!seventh ? "circle-two" : "circle-two-expanded"}
+                className={seventh ? "circle-two-expanded" : "circle-two"}
               ></div>
             </div>
           </div>
