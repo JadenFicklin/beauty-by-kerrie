@@ -1,0 +1,53 @@
+.insta-outer {
+  width: 30%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+.follow-button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 200px;
+  transition: 0.3s;
+}
+.insta-icon {
+  margin-right: 10px;
+}
+.follow-button:hover {
+  cursor: pointer;
+  color: rgb(24, 24, 24);
+}
+.follow-message {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  position: absolute;
+  margin-bottom: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 10px;
+}
+.follow-arrow {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  width: 20px;
+  height: 10px;
+  position: relative;
+  top: 30px;
+  left: -50%;
+  background-color: black;
+}
