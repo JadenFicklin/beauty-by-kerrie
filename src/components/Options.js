@@ -6,6 +6,7 @@ function Options() {
   let mystring = ">";
   const [girl, setGirl] = useState(true);
   const [seventh, setSeventh] = useState(true);
+  const [aboutMe, setAboutMe] = useState(true);
 
   return (
     <>
@@ -66,10 +67,49 @@ function Options() {
             </div>
           </div>
           <div className="boxes-bottom">
-            <div className="box-wide">
-              <div className="box-wide-picture"></div>
+            <div
+              className={aboutMe ? "box-wide" : "box-wide-clicked"}
+              onClick={() => setAboutMe(!aboutMe)}
+            >
+              <div
+                className={
+                  aboutMe ? "box-wide-picture" : "box-wide-picture-clicked"
+                }
+              ></div>
+              {aboutMe ? null : (
+                <div className="about-me-clicked">
+                  <div className="about-me-clicked-top">
+                    <div className="about-me-clicked-top-picture"></div>
+                    <div className="about-me-clicked-top-bottom">
+                      Im a mom to 2 kids, a dog and wife! I enjoy being creative
+                      <br></br>
+                      <br></br>
+                      and love to draw up all the tattoo ideas! I started out
+                      doing permanent makeup at the beginning of my tattooing
+                      career and fell in love with doing lips, so I decided to
+                      focus my energy on Lips alone! But I have always felt like
+                      I was missing the creative side that artistic tattooing
+                      could give me, so I took on some more training and here I
+                      am :)
+                      <br></br>
+                      <br></br>I love my job and I love working with people!
+                      Send me any and all of your ideas :)
+                      <br></br>
+                      <br></br>
+                      Lets see what we can create!
+                    </div>
+                  </div>
+                  {aboutMe ? null : (
+                    <div className="about-me-text-clicked">About Me</div>
+                  )}
+                  <div className="about-me-clicked-bottom">
+                    <div className="about-me-clicked-bottom-left"></div>
+                    <div className="about-me-clicked-bottom-picture"></div>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className="about-me">About me</div>
+            {aboutMe ? <div className="about-me">About me</div> : null}
             <div className="box bot sixth-box">
               <div className="powder-brows-top"></div>
               <div className="powder-brows-bottom">

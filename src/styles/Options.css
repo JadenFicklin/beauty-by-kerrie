@@ -35,8 +35,23 @@
   width: 48%;
   height: 95%;
   padding: 10px;
-  background-color: rgba(211, 211, 211, 0);
+  background-color: white;
   overflow: hidden;
+  transition: 1s;
+  position: relative;
+  z-index: 3;
+}
+.box-wide-clicked {
+  position: absolute;
+  width: 80%;
+  height: 800px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 11;
+  transition: 1s;
+  margin-top: -380px;
+  display: flex;
+  justify-content: flex-end;
 }
 .bot {
   height: 100%;
@@ -232,12 +247,23 @@
   background-position: bottom;
   background-repeat: none;
   transition: 0.3s;
-  border: 1px solid red;
 }
 .box-wide-picture:hover {
   margin: -45px 0px 0px -45px;
   width: 120%;
   height: 120%;
+}
+.box-wide-picture-clicked {
+  width: 55%;
+  height: 85%;
+  margin: -15px 0px 0px -15px;
+  background-image: url("../assets/holding\ flower.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  transition: 0.6s;
+  position: relative;
+  z-index: 1;
 }
 .about-me {
   font-size: 28px;
@@ -248,11 +274,68 @@
   margin-top: 330px;
   margin-left: 20px;
   font-weight: 500;
+  z-index: 4;
+}
+.about-me-text-clicked {
+  position: absolute;
+  left: 450px;
+  top: 70px;
+  font-size: 32px;
+  width: 150px;
+  height: 50px;
+  color: #4c3150;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.about-me-clicked {
+  position: absolute;
+  left: 100px;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-me-clicked-top,
+.about-me-clicked-bottom {
+  width: 100%;
+  height: 50%;
+}
+.about-me-clicked-top-picture {
+  width: 80%;
+  height: 70%;
+  background-image: url("../assets/kerrie-one.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+.about-me-clicked-top-bottom {
+  width: 45%;
+  height: 30%;
+  padding-top: 50px;
+  /* font-family: sans-serif; */
+  color: #4c3150;
 }
 .powder-brows-top {
   width: 100%;
   height: 50%;
   background-image: url("../assets/brows.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  transition: 0.3s;
+}
+.about-me-clicked-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-me-clicked-bottom-left {
+  width: 50%;
+  height: 100%;
+}
+.about-me-clicked-bottom-picture {
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/kerrie-two.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: none;
