@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Banner.css";
 import { BsFacebook } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
+import { BiLink } from "react-icons/bi";
 import { RiInstagramFill } from "react-icons/ri";
-import { BsLinkedin } from "react-icons/bs";
+import { FaYoutube } from "react-icons/fa";
 
 function Banner() {
   return (
@@ -17,18 +17,38 @@ function Banner() {
           COSMETIC TATTOOING IN CHARLOTTE, NC
         </div>
         <div className="banner-icons">
-          <div className="icon">
+          <a
+            className="icon"
+            href="https://www.facebook.com/kerrie.havranek"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsFacebook className="icon-import" />
-          </div>
-          <div className="icon">
-            <BsTwitter className="icon-import" />
-          </div>
-          <div className="icon">
+          </a>
+          <a
+            className="icon"
+            href="https://linktr.ee/beautybykerrie"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BiLink className="icon-import" />
+          </a>
+          <a
+            className="icon"
+            href="https://www.instagram.com/kerrieficklincosmetictattoo/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <RiInstagramFill className="icon-import" />
-          </div>
-          <div className="icon">
-            <BsLinkedin className="icon-import" />
-          </div>
+          </a>
+          <a
+            className="icon"
+            href="https://www.youtube.com/channel/UCD6-b5rOdZSAoX1cx9hg49g"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaYoutube className="icon-import" />
+          </a>
         </div>
       </div>
     </>

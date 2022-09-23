@@ -19,6 +19,8 @@
   margin-left: -60px;
   margin-top: 200px;
   transition: 0.3s;
+  text-decoration: none;
+  color: black;
 }
 .insta-icon {
   margin-right: 10px;
