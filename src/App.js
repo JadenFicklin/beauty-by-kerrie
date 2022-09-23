@@ -25,7 +25,7 @@ function App() {
   const [seventh, setSeventh] = useState(false);
   const [aboutMe, setAboutMe] = useState(true);
 
-  const [home, setHome] = useState(false);
+  const [home, setHome] = useState(true);
   const [eyeliner, setEyeliner] = useState(false);
   const [lipBlush, setLipBlush] = useState(false);
   const [powderBrows, setPowderBrows] = useState(false);
@@ -48,14 +48,14 @@ function App() {
   const [questionsThree, setQuestionsThree] = useState(false);
   const [preThree, setPreThree] = useState(false);
 
-  const [one, setOne] = useState(true);
+  const [one, setOne] = useState(false);
   const [two, setTwo] = useState(false);
   const [three, setThree] = useState(false);
   const [four, setFour] = useState(false);
 
   const handleHomeClick = () => {
     changeScroll(0);
-    setOne(true);
+    setOne(false);
     setTwo(false);
     setThree(false);
     setFour(false);
