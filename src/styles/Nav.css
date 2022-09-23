@@ -100,4 +100,25 @@
   width: 100%;
   height: 83%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-in {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  font-family: "Poppins", sans-serif;
+}
+.about-he {
+  width: 100%;
+  height: 20%;
+  font-size: 32px;
+}
+.about-su {
+  width: 100%;
+  height: 80%;
+  font-size: 18px;
 }

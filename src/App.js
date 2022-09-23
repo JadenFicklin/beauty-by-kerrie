@@ -4,10 +4,21 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 // import Nav from "./components/Nav";
-import Options from "./components/Options";
+// import Options from "./components/Options";
 import "../src/styles/Nav.css";
+import Insta from "../src/components/Insta";
+import "../src/styles/Options.css";
 
 function App() {
+  const changeScroll = (position) => {
+    window.scrollTo(0, position);
+  };
+
+  let mystring = ">";
+  const [girl, setGirl] = useState(true);
+  const [seventh, setSeventh] = useState(false);
+  const [aboutMe, setAboutMe] = useState(true);
+
   const [home, setHome] = useState(false);
   const [eyeliner, setEyeliner] = useState(false);
   const [lipBlush, setLipBlush] = useState(false);
@@ -38,18 +49,24 @@ function App() {
     setPowderBrows(false);
   };
   const handleEyelinerClick = () => {
+    changeScroll(0);
+
     setHome(false);
     setEyeliner(true);
     setLipBlush(false);
     setPowderBrows(false);
   };
   const handleLipBlushClick = () => {
+    changeScroll(0);
+
     setHome(false);
     setEyeliner(false);
     setLipBlush(true);
     setPowderBrows(false);
   };
   const handlePowderBrowsClick = () => {
+    changeScroll(0);
+
     setHome(false);
     setEyeliner(false);
     setLipBlush(false);
@@ -217,7 +234,150 @@ function App() {
           {" "}
           <Landing />
           <Banner />
-          <Options />
+          <div className="options-outer">
+            <div className="options-top">
+              <div className="boxes-top">
+                <div className="box">
+                  <div className="lip-tattoo-top"></div>
+                  <div className="lip-tattoo-bottom">
+                    <div className="lip-tattoo-bottom-inner">
+                      <div className="lip-tattoo-bottom-header h">
+                        Lip Tattoo
+                      </div>
+                      <div className="lip-tattoo-bottom-sub-header s">
+                        Enhance the shape and the color of your lips with the
+                        latest lip blush tattoo
+                      </div>
+                      <div
+                        className="lip-tattoo-bottom-button b"
+                        onClick={handleLipBlushClick}
+                      >
+                        Read More {mystring}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <div
+                    className="box-decoration-inner"
+                    onMouseEnter={() => setGirl(false)}
+                    onMouseLeave={() => setGirl(true)}
+                  >
+                    <div className="girl"></div>
+                    <div className={girl ? "circle" : "circle-expanded"}></div>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="quote-box">
+                    <div className="quote">
+                      The best decision I had made. Absolutely natural amazing
+                      long lasting result.
+                      <div className="quote-credit">jojo baggins</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="fourth-box-top">
+                    <div className="fourth-box-picture"></div>
+                  </div>
+                  <div className="fourth-box-bottom">
+                    <div className="fourth-box-bottom-inner">
+                      <div className="fourth-box-bottom-header h">
+                        Permanent Eyeliner
+                      </div>
+                      <div className="fourth-box-bottom-sub-header s">
+                        Smudge free defined Eyeliner
+                      </div>
+                      <div
+                        className="fourth-box-bottom-button b"
+                        onClick={handleEyelinerClick}
+                      >
+                        Read More {mystring}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="boxes-bottom">
+                <div
+                  className={aboutMe ? "box-wide" : "box-wide-clicked"}
+                  onClick={() => setAboutMe(!aboutMe)}
+                >
+                  <div
+                    className={
+                      aboutMe ? "box-wide-picture" : "box-wide-picture-clicked"
+                    }
+                  ></div>
+                  {aboutMe ? null : (
+                    <div className="about-me-clicked">
+                      <div className="about-me-clicked-top">
+                        <div className="about-me-clicked-top-picture"></div>
+                        <div className="about-me-clicked-top-bottom">
+                          Im a mom to 2 kids, a dog and wife! I enjoy being
+                          creative
+                          <br></br>
+                          <br></br>
+                          and love to draw up all the tattoo ideas! I started
+                          out doing permanent makeup at the beginning of my
+                          tattooing career and fell in love with doing lips, so
+                          I decided to focus my energy on Lips alone! But I have
+                          always felt like I was missing the creative side that
+                          artistic tattooing could give me, so I took on some
+                          more training and here I am :)
+                          <br></br>
+                          <br></br>I love my job and I love working with people!
+                          Send me any and all of your ideas :)
+                          <br></br>
+                          <br></br>
+                          Lets see what we can create!
+                        </div>
+                      </div>
+                      {aboutMe ? null : (
+                        <div className="about-me-text-clicked">About Me</div>
+                      )}
+                      <div className="about-me-clicked-bottom">
+                        <div className="about-me-clicked-bottom-left"></div>
+                        <div className="about-me-clicked-bottom-picture"></div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {aboutMe ? <div className="about-me">About me</div> : null}
+                <div className="box bot sixth-box">
+                  <div className="powder-brows-top"></div>
+                  <div className="powder-brows-bottom">
+                    <div className="powder-brows-bottom-inner">
+                      <div className="permanent-brows-header h">
+                        Permanent Powder Brows
+                      </div>
+                      <div className="permanent-brows-sub-header s">
+                        Perfect for a more natural look
+                      </div>
+                      <div
+                        className="permanent-brows-button b"
+                        onClick={handlePowderBrowsClick}
+                      >
+                        Read More {mystring}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="box bot seventh-box"
+                  onMouseEnter={() => setSeventh(true)}
+                  onMouseLeave={() => setSeventh(false)}
+                >
+                  <div className="seventh-box-inner"></div>
+                  <div
+                    className={seventh ? "circle-two-expanded" : "circle-two"}
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div className="options-bottom">
+              <Insta />
+            </div>
+          </div>
           <Footer />{" "}
         </>
       ) : null}
@@ -282,8 +442,47 @@ function App() {
         </div>
         <div className="eyeliner-page-right">
           <div className="eyeliner-page-right-inner">
-            {about ? <div>about</div> : null}
-            {photos ? <div>photos</div> : null}
+            {eyeliner && about ? (
+              <div className="about-in">
+                <div className="about-he">Description</div>
+                <div className="about-su">
+                  Permanent eyeliner is an Enhancing tattoo that helps to define
+                  your eyes! You can have it applied as subtle as you would like
+                  for a more natural look (called a Lash Enhancement - where
+                  most of the pigment is embedded into your lash line) or a more
+                  noticeable look with above the lash line with or without a
+                  wing, with or without bottom liner. I do not recommend getting
+                  dramatic liners, as your preference can change.
+                </div>
+              </div>
+            ) : null}
+            {photos ? (
+              <div className="prices-eyeliner-inner">
+                <div className="about-he">Prices:</div>
+                <div className="about-su">
+                  <span className="header">Primary and Color Corrections</span>
+                  <span className="sub-header">
+                    First time or correcting a color previously applied
+                  </span>
+                  <span className="price">$350 and up</span>
+                  <br></br>
+                  <span className="header"></span>
+                  <span className="sub-header"></span>
+                  <span className="price"></span>
+                  <span className="header"></span>
+                  <span className="sub-header"></span>
+                  <span className="price"></span>‍ Touchups I highly recommend
+                  getting a touch up 4-6 weeks after your first initial
+                  appointment. Not everyone heals the same so we can make
+                  adjustments if we need to. Any after that will be charged
+                  according to how long it's been since your last appointment
+                  with me. 4-10 weeks/ $100 Color Boost If your application
+                  needs a color boost but has been more than 6 months since the
+                  primary application, or it got applied by someone else, but no
+                  more than 18 months $250 and up
+                </div>
+              </div>
+            ) : null}
             {prices ? <div>prices</div> : null}
             {questions ? <div>questions</div> : null}
             {pre ? <div>pre</div> : null}
