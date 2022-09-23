@@ -525,6 +525,16 @@ function App() {
             ) : null}
             {questions ? <Questions /> : null}
             {pre ? <Pre /> : null}
+            {eyeliner ? (
+              <a
+                className="book-now-exit-button"
+                href="https://glossgenius.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book Now {mystring}
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
@@ -655,6 +665,16 @@ function App() {
             {questionsTwo ? <Questions /> : null}
             {preTwo ? <Pre /> : null}
           </div>
+          {lipBlush ? (
+            <a
+              className="book-now-exit-button"
+              href="https://glossgenius.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book Now {mystring}
+            </a>
+          ) : null}
         </div>
       </div>
 
@@ -785,6 +805,16 @@ function App() {
             {questionsThree ? <Questions /> : null}
             {preThree ? <Pre /> : null}
           </div>
+          {powderBrows ? (
+            <a
+              className="book-now-exit-button"
+              href="https://glossgenius.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book Now {mystring}
+            </a>
+          ) : null}
         </div>
       </div>
     </>
