@@ -53,3 +53,23 @@
   left: -50%;
   background-color: black;
 }
+
+@media screen and (max-width: 900px) {
+  .insta-outer {
+    scale: 0.8;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .insta-outer {
+    scale: 0.6;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .insta-outer {
+    scale: 0.5;
+    margin-top: -50px;
+    width: 200px;
+  }
+}

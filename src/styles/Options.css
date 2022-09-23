@@ -424,3 +424,149 @@
   margin-top: -510px;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 1700px) {
+  .box-wide-picture-clicked {
+    scale: 0.8;
+    right: -80px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .fourth-box-bottom-sub-header {
+    margin: 5px 0px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .quote {
+    scale: 0.8;
+  }
+  .s {
+    scale: 0.8;
+    margin-left: -20px;
+  }
+  .box-wide-picture-clicked {
+    scale: 0.6;
+    right: -120px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .quote {
+    scale: 0.6;
+  }
+  .h {
+    scale: 0.8;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .box-wide-picture-clicked {
+    scale: 0.6;
+    right: -150px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .quote {
+    margin-top: -100px;
+  }
+  .h {
+    margin-top: -25px;
+  }
+  .about-me-clicked-top {
+    scale: 0.6;
+    margin-left: -100px;
+  }
+  .about-me-clicked-bottom {
+    scale: 0.6;
+    margin-left: -100px;
+  }
+  .box-wide-picture-clicked {
+    scale: 0.6;
+    right: -120px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-me-clicked-top {
+    scale: 0.4;
+    margin-left: -150px;
+  }
+  .about-me-clicked-bottom {
+    scale: 0.4;
+    margin-left: -150px;
+  }
+  .box-wide-picture-clicked {
+    scale: 0.4;
+    right: -180px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+  }
+  .about-me-text-clicked {
+    scale: 0.6;
+    margin-left: -300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .quote {
+    margin-top: -100px;
+  }
+  .h {
+    margin-top: -25px;
+    scale: 0.6;
+    margin-left: -30px;
+  }
+  .s {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+  }
+  .b {
+    scale: 0.6;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+  .girl {
+    scale: 0.5;
+    left: -100px;
+    bottom: -120px;
+  }
+  .seventh-box-inner {
+    scale: 0.5;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    left: -22px;
+    bottom: -180px;
+  }
+  .circle-two {
+    top: 40px;
+    left: 20px;
+    width: 200px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-me-clicked-top {
+    scale: 0.4;
+    margin-left: -150px;
+  }
+  .about-me-clicked-bottom {
+    scale: 0.4;
+    margin-left: -150px;
+  }
+  .box-wide-picture-clicked {
+    scale: 0.4;
+    right: -120px;
+    height: 300px;
+    width: 600px;
+    margin-top: 150px;
+  }
+  .about-me-text-clicked {
+    scale: 0.6;
+    margin-left: -300px;
+  }
+}
