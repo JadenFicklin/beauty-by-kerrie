@@ -5,6 +5,7 @@
   /* align-items: center; */
   /* justify-content: center; */
   /* flex-wrap: wrap; */
+  text-align: center;
 }
 
 .banner-text-one,
@@ -74,4 +75,41 @@
   width: 70%;
   height: 70%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .banner-text-two {
+    scale: 0.8;
+  }
+  .banner-text-one,
+  .banner-text-three {
+    scale: 0.8;
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner-text-two {
+    scale: 0.6;
+  }
+  .banner-text-one,
+  .banner-text-three {
+    scale: 0.6;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-text-two {
+    scale: 0.4;
+  }
+  .banner-text-one,
+  .banner-text-three {
+    scale: 0.4;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner-text-two {
+    scale: 0.3;
+  }
+  .banner-text-one,
+  .banner-text-three {
+    scale: 0.3;
+  }
 }
