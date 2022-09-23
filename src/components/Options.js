@@ -60,7 +60,7 @@ function Options() {
                 <div className="quote">
                   The best decision I had made. Absolutely natural amazing long
                   lasting result.
-                  <div className="quote-credit">jojo baggins</div>
+                  <div className="quote-credit">Anna McTaggart</div>
                 </div>
               </div>
             </div>
