@@ -719,11 +719,71 @@ function App() {
         </div>
         <div className="eyeliner-page-right">
           <div className="eyeliner-page-right-inner">
-            {aboutThree ? <div>about Three</div> : null}
-            {photosThree ? <div>photos Three</div> : null}
-            {pricesThree ? <div>prices Three</div> : null}
-            {questionsThree ? <div>questions Three</div> : null}
-            {preThree ? <div>pre Three</div> : null}
+            {aboutThree ? (
+              <div className="about-in">
+                <div className="about-he">Description</div>
+                <div className="about-su">
+                  Permanent Powder Brows is a cosmetic tattoo technique that
+                  uses a tattoo machine to create a soft "powdery" look. This is
+                  NOT microblading. if you like the look of hairstrokes, this
+                  can be done using a machine and in combo of powder brows for a
+                  more defined look. Contact me for more details and pricing.
+                </div>
+              </div>
+            ) : null}
+            {photosThree ? (
+              <div className="eye-photos-inner">
+                <div
+                  className={
+                    photo ? "eye-photo-six photo" : "eye-photo-six photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+                <div
+                  className={
+                    photo
+                      ? "eye-photo-seven photo"
+                      : "eye-photo-seven photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+              </div>
+            ) : null}
+            {pricesThree ? (
+              <div className="prices-eyeliner-inner">
+                <div className="about-he">Prices:</div> <br></br>
+                <div className="about-su">
+                  <span className="heading">Primary and Color Corrections</span>{" "}
+                  <br></br>
+                  <span className="sub-heading">
+                    First time or correcting a color previously applied
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$500</span> <br></br>
+                  <br></br>
+                  <span className="heading">Touchups</span> <br></br>
+                  <span className="sub-heading">
+                    I highly recommend getting a 4- 6 week touchup to ensure
+                    proper even healing and to make any necessary adjustments.
+                    Anything beyond that will be under the color boost pricing
+                    or Color Correction Pricing
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">4-10 weeks/ $100</span> <br></br>
+                  <br></br>
+                  <span className="heading">Color Boost</span> <br></br>
+                  <span className="sub-heading">
+                    If your application needs a color boost but has been more
+                    than 6 months since the primary application, or it got
+                    applied by someone else
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$250 and up</span> <br></br>‍
+                </div>
+              </div>
+            ) : null}
+            {questionsThree ? <Questions /> : null}
+            {preThree ? <Pre /> : null}
           </div>
         </div>
       </div>

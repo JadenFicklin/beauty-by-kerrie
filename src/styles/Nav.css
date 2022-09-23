@@ -161,6 +161,12 @@
 .eye-photo-five {
   background-image: url("../assets/lips-two.jpg");
 }
+.eye-photo-six {
+  background-image: url("../assets/brows-one.jpeg");
+}
+.eye-photo-seven {
+  background-image: url("../assets/brows-two.jpeg");
+}
 
 .photo:hover {
   scale: 1.1;
