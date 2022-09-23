@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Landing.css";
+import "../App.css";
 
 function Landing() {
   return (

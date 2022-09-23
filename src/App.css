@@ -8,6 +8,7 @@ body {
   margin: 0px;
   font-family: sans-serif;
   background-color: #b1cbca;
+  overflow-x: hidden;
 }
 .background-palm-leaves {
   width: 100%;

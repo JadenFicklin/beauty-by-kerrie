@@ -41,7 +41,7 @@
   width: 880px;
   height: 820px;
   position: absolute;
-  top: 187px;
+  bottom: 0px;
   left: 40%;
   background-image: url("../assets/landing\ page\ skater.png");
   background-size: cover;
@@ -60,4 +60,128 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: none;
+}
+
+@media screen and (max-width: 1800px) {
+  .landing-outer {
+    overflow: hidden;
+  }
+  .header {
+    position: absolute;
+    font-size: 130px;
+  }
+  .landing-text-one {
+    left: 30%;
+  }
+  .landing-text-two {
+    left: 24%;
+  }
+  .landing-text-three {
+    left: 18%;
+  }
+  .landing-picture {
+    width: 780px;
+    height: 720px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .landing-outer {
+    overflow: hidden;
+  }
+  .header {
+    position: absolute;
+    font-size: 100px;
+    -webkit-text-stroke: 2px #fef1e2;
+    letter-spacing: 13.5px;
+    font-weight: 900;
+  }
+  .landing-text-one {
+    top: 320px;
+    right: -36%;
+  }
+  .landing-text-two {
+    top: 430px;
+    right: -32%;
+  }
+  .landing-text-three {
+    top: 550px;
+    right: -28%;
+  }
+  .landing-picture {
+    width: 540px;
+    height: 580px;
+  }
+  .landing-signiture {
+    width: 800px;
+    top: 40vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .landing-outer {
+    overflow: hidden;
+  }
+  .header {
+    position: absolute;
+    font-size: 100px;
+    -webkit-text-stroke: 2px #fef1e2;
+    letter-spacing: 13.5px;
+    font-weight: 900;
+  }
+  .landing-text-one {
+    top: 320px;
+    right: -36%;
+  }
+  .landing-text-two {
+    top: 430px;
+    right: -32%;
+  }
+  .landing-text-three {
+    top: 550px;
+    right: -28%;
+  }
+  .landing-picture {
+    width: 540px;
+    height: 580px;
+  }
+  .landing-signiture {
+    width: 800px;
+    top: 40vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .landing-outer {
+    overflow: hidden;
+  }
+  .header {
+    position: absolute;
+    font-size: 70px;
+    -webkit-text-stroke: 1px #fef1e2;
+    letter-spacing: 5.5px;
+    font-weight: 900;
+    width: 440px;
+  }
+  .landing-text-one {
+    top: 450px;
+    left: 30%;
+  }
+  .landing-text-two {
+    top: 550px;
+    left: 24%;
+  }
+  .landing-text-three {
+    top: 650px;
+    left: 18%;
+  }
+  .landing-picture {
+    left: 20%;
+    width: 360px;
+    height: 380px;
+  }
+  .landing-signiture {
+    width: 400px;
+    height: 400px;
+    top: 70vh;
+    left: 10px;
+  }
 }
