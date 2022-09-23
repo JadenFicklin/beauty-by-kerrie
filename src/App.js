@@ -588,11 +588,72 @@ function App() {
         </div>
         <div className="eyeliner-page-right">
           <div className="eyeliner-page-right-inner">
-            {aboutTwo ? <div>about Two</div> : null}
-            {photosTwo ? <div>photos Two</div> : null}
-            {pricesTwo ? <div>prices Two</div> : null}
-            {questionsTwo ? <div>questions Two</div> : null}
-            {preTwo ? <div>pre Two</div> : null}
+            {aboutTwo ? (
+              <div className="about-in">
+                <div className="about-he">Description</div>
+                <div className="about-su">
+                  Lip Blush creates a soft and subtle blush of color defining
+                  the shape and giving the appearance of plump and flushed lips.
+                  Lip color is customized to each client based on natural lip
+                  color, undertone and skin tone.
+                </div>
+              </div>
+            ) : null}
+            {photosTwo ? (
+              <div className="eye-photos-inner">
+                <div
+                  className={
+                    photo
+                      ? "eye-photo-four photo"
+                      : "eye-photo-four photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+                <div
+                  className={
+                    photo
+                      ? "eye-photo-five photo"
+                      : "eye-photo-five photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+              </div>
+            ) : null}
+            {pricesTwo ? (
+              <div className="prices-eyeliner-inner">
+                <div className="about-he">Prices:</div> <br></br>
+                <div className="about-su">
+                  <span className="heading">Primary and Color Corrections</span>{" "}
+                  <br></br>
+                  <span className="sub-heading">
+                    First time or correcting a color previously applied
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$500</span> <br></br>
+                  <br></br>
+                  <span className="heading">Touchups</span> <br></br>
+                  <span className="sub-heading">
+                    I highly recommend getting a 4-6 week touch up to ensure
+                    even healing and to make any necessary adjustments. Any
+                    touchups after that are charged according to the amount of
+                    time since your initial appointment.
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">4-10 weeks/$100 $500</span> <br></br>
+                  <br></br>
+                  <span className="heading">Color Boost</span> <br></br>
+                  <span className="sub-heading">
+                    If your application needs a color boost but has been more
+                    than 6 months since the primary application, or it got
+                    applied by someone else
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$250+</span> <br></br>‍
+                </div>
+              </div>
+            ) : null}
+            {questionsTwo ? <Questions /> : null}
+            {preTwo ? <Pre /> : null}
           </div>
         </div>
       </div>

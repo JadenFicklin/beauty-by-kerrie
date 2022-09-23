@@ -155,6 +155,12 @@
 .eye-photo-three {
   background-image: url("../assets/eye-three.jpg");
 }
+.eye-photo-four {
+  background-image: url("../assets/lips-one.jpg");
+}
+.eye-photo-five {
+  background-image: url("../assets/lips-two.jpg");
+}
 
 .photo:hover {
   scale: 1.1;
@@ -174,4 +180,9 @@
 .pre-and-post-care-inner {
   width: 80%;
   height: 80%;
+}
+.price {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
 }
