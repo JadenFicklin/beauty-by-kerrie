@@ -295,6 +295,22 @@
   display: flex;
   flex-wrap: wrap;
 }
+.about-me-back-button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-left: -50px;
+}
+.about-me-back-button-inner {
+  width: 70%;
+  height: 70%;
+  color: #b8a3b6;
+  transition: 0.3s;
+}
+.about-me-back-button-inner:hover {
+  color: #4c3150;
+}
+
 .about-me-clicked-top,
 .about-me-clicked-bottom {
   width: 100%;

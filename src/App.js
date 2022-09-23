@@ -8,6 +8,7 @@ import Landing from "./components/Landing";
 import "../src/styles/Nav.css";
 import Insta from "../src/components/Insta";
 import "../src/styles/Options.css";
+import { IoArrowBackOutline } from "react-icons/io5";
 
 function App() {
   const changeScroll = (position) => {
@@ -310,6 +311,9 @@ function App() {
                   ></div>
                   {aboutMe ? null : (
                     <div className="about-me-clicked">
+                      <div className="about-me-back-button">
+                        <IoArrowBackOutline className="about-me-back-button-inner" />
+                      </div>
                       <div className="about-me-clicked-top">
                         <div className="about-me-clicked-top-picture"></div>
                         <div className="about-me-clicked-top-bottom">
