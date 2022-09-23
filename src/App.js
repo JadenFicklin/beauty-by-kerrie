@@ -16,6 +16,9 @@ function App() {
   };
 
   let mystring = ">";
+
+  const [photo, setPhoto] = useState(true);
+
   const [girl, setGirl] = useState(true);
   const [seventh, setSeventh] = useState(false);
   const [aboutMe, setAboutMe] = useState(true);
@@ -461,33 +464,63 @@ function App() {
               </div>
             ) : null}
             {photos ? (
+              <div className="eye-photos-inner">
+                <div
+                  className={
+                    photo ? "eye-photo-one photo" : "eye-photo-one photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+                <div
+                  className={
+                    photo ? "eye-photo-two photo" : "eye-photo-two photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+                <div
+                  className={
+                    photo
+                      ? "eye-photo-three photo"
+                      : "eye-photo-three photo-false"
+                  }
+                  onClick={() => setPhoto(!photo)}
+                ></div>
+              </div>
+            ) : null}
+            {prices ? (
               <div className="prices-eyeliner-inner">
-                <div className="about-he">Prices:</div>
+                <div className="about-he">Prices:</div> <br></br>
                 <div className="about-su">
-                  <span className="header">Primary and Color Corrections</span>
-                  <span className="sub-header">
-                    First time or correcting a color previously applied
-                  </span>
-                  <span className="price">$350 and up</span>
+                  <span className="heading">Primary and Color Corrections</span>{" "}
                   <br></br>
-                  <span className="header"></span>
-                  <span className="sub-header"></span>
-                  <span className="price"></span>
-                  <span className="header"></span>
-                  <span className="sub-header"></span>
-                  <span className="price"></span>‍ Touchups I highly recommend
-                  getting a touch up 4-6 weeks after your first initial
-                  appointment. Not everyone heals the same so we can make
-                  adjustments if we need to. Any after that will be charged
-                  according to how long it's been since your last appointment
-                  with me. 4-10 weeks/ $100 Color Boost If your application
-                  needs a color boost but has been more than 6 months since the
-                  primary application, or it got applied by someone else, but no
-                  more than 18 months $250 and up
+                  <span className="sub-heading">
+                    First time or correcting a color previously applied
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$350 and up</span> <br></br>
+                  <br></br>
+                  <span className="heading">Touchups</span> <br></br>
+                  <span className="sub-heading">
+                    I highly recommend getting a touch up 4-6 weeks after your
+                    first initial appointment. Not everyone heals the same so we
+                    can make adjustments if we need to. Any after that will be
+                    charged according to how long it's been since your last
+                    appointment with me.
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">4-10 weeks/ $100</span> <br></br>
+                  <br></br>
+                  <span className="heading">Color Boost</span> <br></br>
+                  <span className="sub-heading">
+                    If your application needs a color boost but has been more
+                    than 6 months since the primary application, or it got
+                    applied by someone else, but no more than 18 months
+                  </span>{" "}
+                  <br></br>
+                  <span className="price">$250 and up</span> <br></br>‍
                 </div>
               </div>
             ) : null}
-            {prices ? <div>prices</div> : null}
             {questions ? <div>questions</div> : null}
             {pre ? <div>pre</div> : null}
           </div>
