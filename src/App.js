@@ -9,6 +9,8 @@ import "../src/styles/Nav.css";
 import Insta from "../src/components/Insta";
 import "../src/styles/Options.css";
 import { IoArrowBackOutline } from "react-icons/io5";
+import Pre from "./components/Pre";
+import Questions from "./components/Questions";
 
 function App() {
   const changeScroll = (position) => {
@@ -521,8 +523,8 @@ function App() {
                 </div>
               </div>
             ) : null}
-            {questions ? <div>questions</div> : null}
-            {pre ? <div>pre</div> : null}
+            {questions ? <Questions /> : null}
+            {pre ? <Pre /> : null}
           </div>
         </div>
       </div>
