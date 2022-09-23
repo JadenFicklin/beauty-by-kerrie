@@ -48,7 +48,18 @@ function App() {
   const [questionsThree, setQuestionsThree] = useState(false);
   const [preThree, setPreThree] = useState(false);
 
+  const [one, setOne] = useState(true);
+  const [two, setTwo] = useState(false);
+  const [three, setThree] = useState(false);
+  const [four, setFour] = useState(false);
+
   const handleHomeClick = () => {
+    changeScroll(0);
+    setOne(true);
+    setTwo(false);
+    setThree(false);
+    setFour(false);
+
     setHome(true);
     setEyeliner(false);
     setLipBlush(false);
@@ -56,6 +67,11 @@ function App() {
   };
   const handleEyelinerClick = () => {
     changeScroll(0);
+
+    setOne(false);
+    setTwo(true);
+    setThree(false);
+    setFour(false);
 
     setHome(false);
     setEyeliner(true);
@@ -65,6 +81,11 @@ function App() {
   const handleLipBlushClick = () => {
     changeScroll(0);
 
+    setOne(false);
+    setTwo(false);
+    setThree(true);
+    setFour(false);
+
     setHome(false);
     setEyeliner(false);
     setLipBlush(true);
@@ -73,11 +94,20 @@ function App() {
   const handlePowderBrowsClick = () => {
     changeScroll(0);
 
+    setOne(false);
+    setTwo(false);
+    setThree(false);
+    setFour(true);
+
     setHome(false);
     setEyeliner(false);
     setLipBlush(false);
     setPowderBrows(true);
   };
+
+  //
+  //
+  //
 
   const handleAboutClick = () => {
     setAbout(true);
@@ -203,25 +233,31 @@ function App() {
 
       <nav className="nav-outer">
         <div className="nav-home option" onClick={handleHomeClick}>
-          HOME
+          <span className={one ? "go-infront" : "go-infront-false"}>HOME</span>
         </div>
         <div
           className="nav-permanent-eyeliner option"
           onClick={handleEyelinerClick}
         >
-          PERMANENT EYELINER
+          <span className={two ? "go-infront" : "go-infront-false"}>
+            PERMANENT EYELINER
+          </span>
         </div>
         <div
           className="nav-permanent-lip-blush option"
           onClick={handleLipBlushClick}
         >
-          PERMANENT LIP BLUSH
+          <span className={three ? "go-infront" : "go-infront-false"}>
+            PERMANENT LIP BLUSH
+          </span>
         </div>
         <div
           className="nav-permanent-powder-brows option"
           onClick={handlePowderBrowsClick}
         >
-          PERMANENT POWDER BROWS
+          <span className={four ? "go-infront" : "go-infront-false"}>
+            PERMANENT POWDER BROWS
+          </span>
         </div>
       </nav>
       <div className="nav-background"></div>

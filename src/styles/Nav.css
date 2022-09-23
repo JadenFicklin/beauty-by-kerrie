@@ -211,3 +211,34 @@
   background-color: #b8a3b6;
   cursor: pointer;
 }
+.nav-highlight {
+  width: 165px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  background-color: #2b717d46;
+}
+.option {
+  width: 18%;
+}
+.go-infront {
+  background-color: #2b717d46;
+  position: absolute;
+  height: 80px;
+  padding: 20px 50px 0px 50px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.go-infront-false {
+  background-color: #ffffff00;
+  position: absolute;
+  height: 80px;
+  padding: 20px 50px 0px 50px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
